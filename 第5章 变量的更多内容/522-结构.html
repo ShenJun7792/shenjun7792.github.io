@@ -59,6 +59,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="523-数组.html" />
+    
     
     <link rel="prev" href="521-枚举.html" />
     
@@ -936,14 +938,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2.3" >
+        <li class="chapter " data-level="1.6.2.3" data-path="523-数组.html">
             
-                <span>
+                <a href="523-数组.html">
             
                     
                     5.2.3 数组
             
-                </span>
+                </a>
             
 
             
@@ -954,14 +956,53 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" >
+        <li class="chapter " data-level="1.6.3" data-path="53-字符串的处理.html">
             
-                <span>
+                <a href="53-字符串的处理.html">
             
                     
                     5.3 字符串的处理
             
-                </span>
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="54-小结.html">
+            
+                <a href="54-小结.html">
+            
+                    
+                    5.4 小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="55-练习.html">
+            
+                <a href="55-练习.html">
+            
+                    
+                    5.5 练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="56-本章要点.html">
+            
+                <a href="56-本章要点.html">
+            
+                    
+                    5.6 本章要点
+            
+                </a>
             
 
             
@@ -2895,6 +2936,104 @@
                                 
                                 <h2 id="&#x7ED3;&#x6784;">&#x7ED3;&#x6784;</h2>
 <p>&#x2003;&#x2003;&#x5728;&#x4E00;&#x4E2A;&#x8981;&#x4ECB;&#x7ECD;&#x7684;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x662F;&#x7ED3;&#x6784;&#xFF08; <code>struct</code>&#xFF0C;structure&#x7684;&#x7F29;&#x5199; &#xFF09;&#x3002;&#x7ED3;&#x6784;&#x5C31;&#x662F;&#x7531;&#x51E0;&#x4E2A;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5B9A;&#x8981;&#x5B58;&#x50A8;&#x4ECE;&#x8D77;&#x70B9;&#x5F00;&#x59CB;&#x5230;&#x67D0;&#x4E00;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5176;&#x4E2D;&#x8DEF;&#x5F84;&#x7531;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x548C;&#x4E00;&#x4E2A;&#x8DDD;&#x79BB;&#x503C;&#xFF08;&#x82F1;&#x91CC;&#xFF09;&#x7EC4;&#x6210;&#x3002;&#x4E3A;&#x7B80;&#x5355;&#x8D77;&#x89C1;&#xFF0C;&#x5047;&#x5B9A;&#x8BE5;&#x65B9;&#x5411;&#x662F;&#x6307;&#x5357;&#x9488;&#x4E0A;&#x7684;&#x4E00;&#x70B9;&#xFF08;&#x8FD9;&#x6837;&#xFF0C;&#x65B9;&#x5411;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x4E0A;&#x4E00;&#x8282;&#x7684; <code>orientation</code> &#x679A;&#x4E3E;&#x6765;&#x8868;&#x793A;&#xFF09;&#xFF0C;&#x8DDD;&#x79BB;&#x503C;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A; <code>double</code> &#x7C7B;&#x578B;&#x6765;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x524D;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x7528;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x53D8;&#x91CF;&#x6765;&#x8868;&#x793A;&#x8BE5;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<pre><code class="lang-javascript">        orientation myDirection;
+        double myDistance;
+</code></pre>
+<p>&#x2003;&#x2003;&#x50CF;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x662F;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x4F46;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x5B58;&#x50A8;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#xFF08;&#x5728;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x8DEF;&#x5F84;&#x65F6;&#xFF0C;&#x5C31;&#x5C24;&#x4E3A;&#x7B80;&#x5355;&#xFF09;&#x3002;</p>
+<h4 id="&#x5B9A;&#x4E49;&#x7ED3;&#x6784;">&#x5B9A;&#x4E49;&#x7ED3;&#x6784;</h4>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528; <code>struct</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript">        struct &lt;typeName&gt;
+        {
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">memberDeclarations</span>&gt;</span>
+        }
+</span></code></pre>
+<p>&#x2003;&#x2003;<code>&lt;memberDeclarations&gt;</code> &#x90E8;&#x5206;&#x5305;&#x542B;&#x53D8;&#x91CF;&#x7684;&#x58F0;&#x660E;&#xFF08;&#x79F0;&#x4E3A;&#x7ED3;&#x6784;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF09;&#xFF0C;&#x5176;&#x683C;&#x5F0F;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E00;&#x6837;&#x3002;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x58F0;&#x660E;&#x90FD;&#x91C7;&#x7528;&#x5982;&#x4E0B;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-javascript">        &lt;accessbility&gt; &lt;type&gt; &lt;name&gt;;
+</code></pre>
+<p>&#x2003;&#x2003;&#x8981;&#x8BA9;&#x8C03;&#x7528;&#x7ED3;&#x6784;&#x7684;&#x4EE3;&#x7801;&#x8BBF;&#x95EE;&#x8BE5;&#x7ED3;&#x6784;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9; <code>&lt;accesssibility&gt;</code> &#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>public</code>&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript">        struct rout
+        {
+            public orientation direction;
+            public double distance;
+        }
+</code></pre>
+<p>&#x2003;&#x2003;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x7C7B;&#x578B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8BE5;&#x7ED3;&#x6784;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-javascript">        rout myRoute;
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53E5;&#x70B9;&#x5B57;&#x7B26;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF1A;</p>
+<pre><code class="lang-javascript">        myRoute.direction = orientation.north;
+        myRoute.distance = <span class="hljs-number">2.5</span>;
+</code></pre>
+<p>&#x2003;&#x2003;&#x628A;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x653E;&#x5728;&#x4E0B;&#x9762;&#x7684; &#x201C;&#x8BD5;&#x4E00;&#x8BD5;&#x201D;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x4F7F;&#x7528;&#x4E0A;&#x4E00;&#x8282;&#x7684; <code>orientation</code> &#x679A;&#x4E3E;&#x548C;&#x4E0A;&#x9762;&#x7684; <code>route</code> &#x7ED3;&#x6784;&#x3002;&#x672C;&#x4F8B;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x4FBF;&#x4F60;&#x4E86;&#x89E3;&#x7ED3;&#x6784;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;</p>
+<pre><code>&#x5C06;&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x5230; `Program.cs` &#x4E2D;&#xFF1A;
+</code></pre><pre><code class="lang-javascript">        namespace Ch05Ex03
+        {
+            enum orientation : byte
+            {
+                north = <span class="hljs-number">1</span>,
+                south = <span class="hljs-number">2</span>,
+                east = <span class="hljs-number">3</span>,
+                west = <span class="hljs-number">4</span>
+            }
+
+            struct route
+            {
+                public orientation direction;
+                public double distance;
+            }
+
+            <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+            </span>{
+                <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> Main(string[] args)
+                {
+                    route myRoute;
+                    int myDirection = <span class="hljs-number">-1</span>;
+                    double myDistance;
+                    Console.WriteLine(<span class="hljs-string">&quot;1) North\n2) South\n3) East\n4) West&quot;</span>);
+                    <span class="hljs-keyword">do</span>
+                    {
+                        Console.WriteLine(<span class="hljs-string">&quot;Select a direction&quot;</span>);
+                        myDirection = Convert.ToInt32(Console.ReadLine());
+                    } <span class="hljs-keyword">while</span> ((myDirection &lt; <span class="hljs-number">1</span>) || (myDirection &gt; <span class="hljs-number">4</span>));
+                    Console.WriteLine(<span class="hljs-string">&quot;Input a distance:&quot;</span>);
+                    myDistance = Convert.ToDouble(Console.ReadLine());
+                    myRoute.direction = (orientation)myDirection;
+                    myRoute.distance = myDistance;
+                    Console.WriteLine(<span class="hljs-string">&quot;myRoute specifies a direction of {0} and a distance of {1}&quot;</span>, 
+                                        myRoute.direction, myRoute.distance);
+                    Console.ReadKey();
+                }
+            }
+        }
+</code></pre>
+<blockquote>
+<p><strong>&#x793A;&#x4F8B;&#x7684;&#x8BF4;&#x660E;</strong></p>
+<p>&#x2003;&#x2003;&#x7ED3;&#x6784;&#x548C;&#x679A;&#x4E3E;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x7684;&#x4E3B;&#x4F53;&#x4E4B;&#x5916;&#x58F0;&#x660E;&#x7684;&#x3002;&#x5728;&#x540D;&#x79F0;&#x7A7A;&#x95F4;&#x58F0;&#x660E; <code>route</code> &#x7ED3;&#x6784;&#x53CA;&#x5176;&#x4F7F;&#x7528;&#x7684; <code>orientation</code> &#x679A;&#x4E3E;&#xFF1A;</p>
+<pre><code class="lang-javascript">        enum orientation : byte
+        {
+            north = <span class="hljs-number">1</span>,
+            south = <span class="hljs-number">2</span>,
+            east = <span class="hljs-number">3</span>,
+            west = <span class="hljs-number">4</span>
+        }
+        struct route
+        {
+            public orientation direction;
+            public double distance;
+        }
+</code></pre>
+<p>&#x2003;&#x2003;&#x4EE3;&#x7801;&#x7684;&#x4E3B;&#x4F53;&#x7ED3;&#x6784;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x4E00;&#x4E9B;&#x793A;&#x4F8B;&#x7C7B;&#x4F3C;&#xFF0C;&#x8981;&#x6C42;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x5B83;&#x4EEC;&#x3002;&#x628A;&#x65B9;&#x5411;&#x9009;&#x62E9;&#x653E;&#x5728; <code>do</code> &#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x6709;&#x6548;&#x6027;&#x7684;&#x68C0;&#x67E5;&#xFF0C;&#x62D2;&#x7EDD;&#x4E0D;&#x5C5E;&#x4E8E; 1&#xFF5E;4 &#x8303;&#x56F4;&#x7684;&#x6574;&#x6570;&#x8F93;&#x5165;&#xFF08;&#x9009;&#x62E9;&#x8BE5;&#x8303;&#x56F4;&#x4E2D;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x6620;&#x5C04;&#x5230;&#x679A;&#x4E3E;&#x6210;&#x5458;&#xFF0C;&#x4ECE;&#x800C;&#x65B9;&#x4FBF;&#x8D4B;&#x503C;&#xFF09;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x4E0D;&#x80FD;&#x89E3;&#x91CA;&#x4E3A;&#x6574;&#x6570;&#x7684;&#x8F93;&#x5165;&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x672C;&#x7AE0;&#x540E;&#x9762;&#x4F1A;&#x8BF4;&#x660E;&#x5176;&#x539F;&#x56E0;&#x548C;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x3002;</strong></p>
+<p>&#x2003;&#x2003;&#x6CE8;&#x610F; &#x26A0;&#xFE0F;&#xFF0C;&#x5728;&#x5F15;&#x7528; <code>route</code> &#x7684;&#x6210;&#x5458;&#x65F6;&#xFF0C;&#x5904;&#x7406;&#x5B83;&#x4EEC;&#x7684;&#x65B9;&#x5F0F;&#x4E0E;&#x5904;&#x7406;&#x548C;&#x6210;&#x5458;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#x7684;&#x53D8;&#x91CF;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x3002;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-javascript">        myRoute.direction = (orientation)myDirection;
+        myRoute.distance = myDistance;
+</code></pre>
+<p>&#x2003;&#x2003;&#x53EF;&#x76F4;&#x63A5;&#x628A;&#x8F93;&#x5165;&#x7684;&#x503C;&#x653E;&#x5230; <code>myRoute.distance</code> &#x4E2D;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x6709;&#x8D1F;&#x9762;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-javascript">        myRoute.distance = Convert.ToDouble(Console.ReadLine());
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD8;&#x5E94;&#x8FDB;&#x884C;&#x6709;&#x6548;&#x6027;&#x9A8C;&#x8BC1;&#xFF0C;&#x4F46;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x3002;&#x5BF9;&#x7ED3;&#x6784;&#x6210;&#x5458;&#x7684;&#x4EFB;&#x4F55;&#x8BBF;&#x95EE;&#x90FD;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5904;&#x7406;&#x3002; <code>&lt;structVar&gt;.&lt;memberVar&gt;</code> &#x5F62;&#x5F0F;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x8BA1;&#x7B97; <code>&lt;memberVar&gt;</code> &#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
 <p>&#x1F51A;</p>
 
                                 
@@ -2923,10 +3062,14 @@
 
             
                 
-                <a href="521-枚举.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5.2.1 枚举">
+                <a href="521-枚举.html" class="navigation navigation-prev " aria-label="Previous page: 5.2.1 枚举">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="523-数组.html" class="navigation navigation-next " aria-label="Next page: 5.2.3 数组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -2935,7 +3078,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2.2 结构","level":"1.6.2.2","depth":3,"next":{"title":"5.2.3 数组","level":"1.6.2.3","depth":3,"ref":"","articles":[]},"previous":{"title":"5.2.1 枚举","level":"1.6.2.1","depth":3,"path":"第5章 变量的更多内容/521-枚举.md","ref":"第5章 变量的更多内容/521-枚举.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第5章 变量的更多内容/522-结构.md","mtime":"2016-10-22T16:45:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-23T12:54:22.775Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2.2 结构","level":"1.6.2.2","depth":3,"next":{"title":"5.2.3 数组","level":"1.6.2.3","depth":3,"path":"第5章 变量的更多内容/523-数组.md","ref":"第5章 变量的更多内容/523-数组.md","articles":[]},"previous":{"title":"5.2.1 枚举","level":"1.6.2.1","depth":3,"path":"第5章 变量的更多内容/521-枚举.md","ref":"第5章 变量的更多内容/521-枚举.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第5章 变量的更多内容/522-结构.md","mtime":"2016-10-23T15:52:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-24T07:09:25.808Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
